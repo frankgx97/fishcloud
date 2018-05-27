@@ -8,7 +8,7 @@ atexit.register(GPIO.cleanup)
 servopin = 21
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(servopin, GPIO.OUT, initial=False)
-p = GPIO.PWM(servopin,50) 
+p = GPIO.PWM(servopin,100) 
 p.start(0)
 time.sleep(2)
 
