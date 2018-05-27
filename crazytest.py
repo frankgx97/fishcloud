@@ -18,5 +18,3 @@ for i in range(0,181,10):
   time.sleep(0.02)                     
   p.ChangeDutyCycle(0)              
   time.sleep(0.2)
-  
-pause()
