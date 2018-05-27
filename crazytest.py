@@ -1,8 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 
-RPi.GPIO.setmode(GPIO.BOARD)
-RPi.GPIO.setup(11, RPi.GPIO.OUT)
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(11, RPi.GPIO.OUT)
 
 while True:
     GPIO.output(channel, 1)
