@@ -1,13 +1,8 @@
-import RSPi.GPIO as GPIO 
-import time
+from gpiozero import LED
+from time import sleep
 
-RPi.GPIO.setmode(GPIO.BOARD)  
-RPi.GPIO.setup(2, RPi.GPIO.OUT)  
+led = LED(2)
 
 while True:
-    GPIO.output(channel, 1)
-    time.sleep(1)
-    GPIO.output(channel, 0)
-    time.sleep(1)
-
-GPIO.cleanup()
+    led.toggle()
+    sleep(1)
