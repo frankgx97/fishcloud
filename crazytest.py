@@ -13,10 +13,10 @@ p.start(0)
 time.sleep(2)
 
 
-  for i in range(0,181,10):
-    p.ChangeDutyCycle(2.5 + 10 * i / 180) 
-    time.sleep(0.02)                     
-    p.ChangeDutyCycle(0)              
-    time.sleep(0.2)
-    
+for i in range(0,181,10):
+  p.ChangeDutyCycle(2.5 + 10 * i / 180) 
+  time.sleep(0.02)                     
+  p.ChangeDutyCycle(0)              
+  time.sleep(0.2)
+  
 pause()
