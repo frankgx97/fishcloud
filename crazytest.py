@@ -4,7 +4,7 @@ import time
 RPi.GPIO.setmode(GPIO.BOARD)
 RPi.GPIO.setup(11, RPi.GPIO.OUT)
 
-while True
+while True:
     GPIO.output(channel, 1)
     time.sleep(1)
     GPIO.output(channel, 0)  
