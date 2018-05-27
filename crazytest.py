@@ -2,7 +2,7 @@ import RPi.GPIO as GPIO
 import time
 
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(11, RPi.GPIO.OUT)
+GPIO.setup(11, GPIO.OUT)
 
 while True:
     GPIO.output(channel, 1)
