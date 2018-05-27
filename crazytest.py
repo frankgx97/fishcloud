@@ -18,9 +18,3 @@ while(True):
     time.sleep(0.02)                     
     p.ChangeDutyCycle(0)              
     time.sleep(0.2)
-  
-  for i in range(181,0,-10):
-    p.ChangeDutyCycle(2.5 + 10 * i / 180)
-    time.sleep(0.02)
-    p.ChangeDutyCycle(0)
-    time.sleep(0.2)
