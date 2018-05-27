@@ -1,19 +1,10 @@
-import time
-import RPi.GPIO as GPIO  
-GPIO.setmode(GPIO.BOARD) 
-GPIO.setup(12, GPIO.OUT)
+from gpiozero import LED
+from time import sleep
 
-p = GPIO.PWM(12, 50) 
-p.start(0)   
-try:
-    while 1:
-        for dc in range(0, 101, 5):
-            p.ChangeDutyCycle(dc) 
-            time.sleep(0.1)
-        for dc in range(100, -1, -5):
-            p.ChangeDutyCycle(dc)
-            time.sleep(0.1)
-except KeyboardInterrupt:
-    pass
-p.stop() 
-GPIO.cleanup() 
+led = LED(2)
+
+while True:
+    led.on()
+    sleep(1)
+    led.off()
+    sleep(1)
