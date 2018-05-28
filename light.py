@@ -6,9 +6,9 @@ from signal import pause
 led = LED(2)
 
 def set_time(starttime,endtime):
-  duringtime = TimeOfDay(now(), time(endtime))
+  duringtime = TimeOfDay(time.now(), time(endtime))
   led.source = duringtime.values
-  return now()# led.is_lit
+  return time.now()# led.is_lit
 
 def turn_on():
   led.on()
