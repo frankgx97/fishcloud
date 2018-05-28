@@ -4,13 +4,11 @@ from datetime import time
 from signal import pause
 
 led = LED(2)
-starttime = 0
-endtime = 23
 
 def set_time(starttime,endtime):
   duringtime = TimeOfDay(time(starttime), time(endtime))
   led.source = duringtime.values
-  return duringtime.values# led.is_lit
+  return time(starttime)# led.is_lit
 
 def turn_on():
   led.on()
