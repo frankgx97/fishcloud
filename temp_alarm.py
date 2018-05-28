@@ -7,23 +7,23 @@ LISTEN_PERIOD = 1
 
 
 def set_temp_range(low, high):
-    CRIT_TEMP_LOW = low
-    CRIT_TEMP_HIGH = high
+  CRIT_TEMP_LOW = low
+  CRIT_TEMP_HIGH = high
 
 
 def set_listen_period(timeperiod):
-    LISTEN_PERIOD = timeperiod
+  LISTEN_PERIOD = timeperiod
 
 
 def temp_range():
-    current_temp = temperature.read_temp()
-    if current_temp > CRIT_TEMP_HIGH:
-        state = 'Too high'
-    elif current_temp < CRIT_TEMP_LOW:
-        state = 'Too low'
-    else:
-        state = 'Normal'
-	return state, current_temp
+  current_temp = temperature.read_temp()
+  if current_temp > CRIT_TEMP_HIGH:
+    state = 'Too high'
+  elif current_temp < CRIT_TEMP_LOW:
+    state = 'Too low'
+  else:
+    state = 'Normal'
+  return state, current_temp
   
 def diplay_temp(): #just for console
   print(temp_range())
