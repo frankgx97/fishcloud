@@ -22,7 +22,7 @@ def auto_control():
   ############not finished
   return 
 
-print set_time(6.5,8)
+print set_time(6,8)
 pause()
 #while True:
 #  print(turn_on())
