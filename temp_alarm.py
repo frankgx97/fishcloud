@@ -9,7 +9,7 @@ def set_temp_range(low, high):
 	CRIT_TEMP_LOW = low
 	CRIT_TEMP_HIGH = high
 
-def set_listen_period(timeperiod)
+def set_listen_period(timeperiod):
 	LISTEN_PERIOD = timeperiod
 
 def temp_range():
@@ -23,7 +23,7 @@ def temp_range():
     return state, current_temp
   
 while True:
-  	print temp_range()
-    time.sleep(LISTEN_PERIOD)
+	print temp_range()
+	time.sleep(LISTEN_PERIOD)
 	
 	
