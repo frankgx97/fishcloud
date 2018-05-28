@@ -26,6 +26,6 @@ def temp_range():
     return state, current_temp
 
 while True:
-    print temp_range()
+    print(temp_range())
     time.sleep(LISTEN_PERIOD)
 
