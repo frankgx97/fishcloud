@@ -15,8 +15,8 @@ def auto_control():
   ############not finished
   return 
 
-while True:
-  print(turn_on())
-  sleep(1)
-  print(turn_off())
-  sleep(1)
+#while True:
+#  print(turn_on())
+#  sleep(1)
+#  print(turn_off())
+#  sleep(1)
