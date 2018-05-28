@@ -10,6 +10,7 @@ endtime = 23
 def set_time(starttime,endtime):
   duringtime = TimeOfDay(time(starttime), time(endtime))
   led.source = duringtime.values
+  return led.is_lit
 
 def turn_on():
   led.on()
@@ -23,7 +24,7 @@ def auto_control():
   ############not finished
   return 
 
-set_time(6,7)
+print set_time(6,7)
 pause()
 #while True:
 #  print(turn_on())
