@@ -5,10 +5,10 @@ from signal import pause
 
 led = LED(2)
 
-def set_time(starttime,endtime):
-  duringtime = TimeOfDay(time.now(), time(endtime))
+def set_time(sh,sm,ss,eh,em,es):
+  duringtime = TimeOfDay(time(sh,sm,ss), time(eh,em,es))
   led.source = duringtime.values
-  return time.now()# led.is_lit
+  return led.is_lit# led.is_lit
 
 def turn_on():
   led.on()
@@ -22,7 +22,7 @@ def auto_control():
   ############not finished
   return 
 
-print set_time(6,8)
+print set_time(7,49,0,8,0,0)
 pause()
 #while True:
 #  print(turn_on())
