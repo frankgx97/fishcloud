@@ -2,7 +2,7 @@ import time
 import temperature.py
 
 CRIT_TEMP_LOW = 20
-CRIT_TEMP_HIGH = 24
+CRIT_TEMP_HIGH = 30
 LISTEN_PERIOD = 1
 
 
