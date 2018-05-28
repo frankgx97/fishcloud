@@ -1,7 +1,15 @@
-from gpiozero import LED
+from gpiozero import LED, TimeOfDay
 from time import sleep
+from datetime import time
+from signal import pause
 
 led = LED(2)
+starttime = 0
+endtime = 23
+
+def set_time(starttime,endtime):
+  duringtime = TimeOfDay(time(starttime), time(endtime))
+  led.source = morning.values
 
 def turn_on():
   led.on()
@@ -15,6 +23,8 @@ def auto_control():
   ############not finished
   return 
 
+set_time(6,7)
+pause()
 #while True:
 #  print(turn_on())
 #  sleep(1)
