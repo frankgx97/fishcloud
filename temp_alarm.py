@@ -1,5 +1,5 @@
 import time
-import temperature.py
+import temperature
 
 CRIT_TEMP_LOW = 20
 CRIT_TEMP_HIGH = 30
@@ -16,7 +16,7 @@ def set_listen_period(timeperiod):
 
 
 def temp_range():
-    current_temp = read_temp()
+    current_temp = temperature.read_temp()
     if current_temp > CRIT_TEMP_HIGH:
         state = 'Too high'
     elif current_temp < CRIT_TEMP_LOW:
