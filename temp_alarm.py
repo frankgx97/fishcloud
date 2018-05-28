@@ -24,8 +24,12 @@ def temp_range():
     else:
         state = 'Normal'
     return state, current_temp
-
-while True:
-    print(temp_range())
+  
+def diplay_temp(): #just for console
+  	print(temp_range())
     time.sleep(LISTEN_PERIOD)
+
+#while True:
+#    print(temp_range())
+#    time.sleep(LISTEN_PERIOD)
 
