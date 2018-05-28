@@ -9,7 +9,7 @@ endtime = 23
 
 def set_time(starttime,endtime):
   duringtime = TimeOfDay(time(starttime), time(endtime))
-  led.source = morning.values
+  led.source = duringtime.values
 
 def turn_on():
   led.on()
