@@ -8,7 +8,7 @@ led = LED(2)
 def set_time(sh,sm,ss,eh,em,es):
   duringtime = TimeOfDay(time(sh,sm,ss), time(eh,em,es))
   led.source = duringtime.values
-  return led.is_lit# led.is_lit
+  return time(sh,sm,ss)# led.is_lit
 
 def turn_on():
   led.on()
