@@ -1,3 +1,4 @@
+#coding:utf8
 from gpiozero import LED, TimeOfDay
 from time import sleep
 from datetime import datetime
