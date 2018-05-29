@@ -10,4 +10,4 @@ def feed_fish():
   sleep(1)
 
 while True:
-    feedfish()
+    feed_fish()
