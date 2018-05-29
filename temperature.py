@@ -39,6 +39,16 @@ def read_temp():
         temp_c = float(temp_string) / 1000.0
         #temp_f = temp_c * 9.0 / 5.0 + 32.0
         return temp_c #, temp_f
+
+def temp_range():
+  current_temp = read_temp()
+  if current_temp > CRIT_TEMP_HIGH:
+    state = 'Too high'
+  elif current_temp < CRIT_TEMP_LOW:
+    state = 'Too low'
+  else:
+    state = 'Normal'
+  return state, current_temp
   
 #while True:
 #    print(read_temp())   

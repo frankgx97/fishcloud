@@ -6,6 +6,10 @@ from signal import pause
 
 led = LED(2)
 
+def getStat():
+  '''获取LED状态'''
+  return led.is_lit
+
 def set_time(sh,sm,ss,eh,em,es):
   duringtime = TimeOfDay(time(sh,sm,ss), time(eh,em,es))
   led.source = duringtime.values
