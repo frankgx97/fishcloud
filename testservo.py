@@ -9,5 +9,4 @@ def feed_fish():
   servo.max()
   sleep(1)
 
-while True:
-    feed_fish()
+feed_fish()
