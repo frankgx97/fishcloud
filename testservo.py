@@ -9,4 +9,5 @@ def feed_fish():
   servo.max()
   sleep(1)
 
-feed_fish()
+if __name__ == '__main__': 
+  feed_fish()
