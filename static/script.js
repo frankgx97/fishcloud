@@ -5,12 +5,14 @@ $("#refresh").click(function() {
 $("#lightOn").click(function() {
     $.get("/action/lighton", function(rst) {
         alert("开灯成功，当前灯光：" + rst.state);
+        $("#lightStat").html(rst.state);
     });
 })
 
 $("#lightOff").click(function() {
     $.get("/action/lightoff", function(rst) {
         alert("关灯成功，当前灯光：" + rst.state);
+        $("#lightStat").html(rst.state);
     });
 })
 
