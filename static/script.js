@@ -14,7 +14,7 @@ $("#lightOff").click(function() {
     });
 })
 
-$("#lightOff").click(function() {
+$("#feed").click(function() {
     $.get("/action/feed", function(rst) {
         alert("投喂结果：" + rst.state);
     });
