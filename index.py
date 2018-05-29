@@ -12,8 +12,6 @@ else:
     import temperature as temperature
     import light as light
 
-
-
 app = Flask(__name__, static_url_path='/static')  # 定义/static目录为静态文件目录
 
 @app.route("/")

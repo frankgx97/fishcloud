@@ -26,11 +26,6 @@ def turn_off():
 def auto_control():
   ############not finished
   return 
-
-print set_time(7,49,0,23,0,0)
-pause()
-#while True:
-#  print(turn_on())
-#  sleep(1)
-#  print(turn_off())
-#  sleep(1)
+if __name__ == '__main__':
+  print set_time(7,49,0,23,0,0)
+  pause()
