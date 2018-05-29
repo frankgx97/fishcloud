@@ -1,14 +1,14 @@
 from gpiozero import LED, TimeOfDay
 from time import sleep
-from datetime import time
+import datetime
 from signal import pause
 
 led = LED(2)
 
 def set_time(sh,sm,ss,eh,em,es):
-  duringtime = TimeOfDay(time(sh,sm,ss), time(eh,em,es))
+  duringtime = TimeOfDay(datetime.time(sh,sm,ss), datetime.time(eh,em,es))
   led.source = duringtime.values
-  return localtime()# led.is_lit
+  return datetime.now()# led.is_lit
 
 def turn_on():
   led.on()
