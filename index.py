@@ -11,6 +11,7 @@ else:
     print "Running on other Platform"
     import temperature as temperature
     import light as light
+    import tinyservo as tservo
 
 app = Flask(__name__, static_url_path='/static')  # 定义/static目录为静态文件目录
 
@@ -23,6 +24,7 @@ def index():
 def feed():
     '''投喂'''
     return jsonify({
+		tservo.feed_fish()
         "state":True
     })
 
