@@ -6,7 +6,7 @@ servo.max()
 
 def feed_fish():
   servo.min()
-  sleep(1)
+  sleep(2)
   servo.max()
   return servo.value
 
