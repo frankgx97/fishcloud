@@ -24,8 +24,7 @@ def index():
 def feed():
     '''投喂'''
     return jsonify({
-		tservo.feed_fish()
-        "state":True
+        "state":tservo.feed_fish()
     })
 
 @app.route("/action/lighton")
