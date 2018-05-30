@@ -8,7 +8,7 @@ def feed_fish():
   sleep(1)
   servo.max()
   sleep(1)
-  return true
+  return servo.value
 
 if __name__ == '__main__': 
   feed_fish()
