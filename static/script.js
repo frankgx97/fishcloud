@@ -24,7 +24,7 @@ $("#feed").click(function() {
 
 $(document).ready(function() {
     getStatus();
-    setInterval("getStatus()", 1000);
+    setInterval("getStatus()", 5000);
 });
 
 function getStatus() {
