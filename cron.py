@@ -6,11 +6,9 @@ import platform
 if platform.system() == 'Darwin':
     print "Running on Darwin"
     import temperature_test as temperature
-    import light_test as light
 else:
     print "Running on other Platform"
     import temperature as temperature
-    import light as light
 
 def tempMonitor():
     rst = temperature.temp_range()
