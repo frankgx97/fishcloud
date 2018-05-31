@@ -11,4 +11,5 @@ def feed_fish():
   return servo.value
 
 if __name__ == '__main__': 
-  print feed_fish()
+  while True:
+    print feed_fish()
