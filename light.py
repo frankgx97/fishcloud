@@ -6,7 +6,6 @@ from datetime import time
 from signal import pause
 
 led = LED(2)
-led.off()
 
 def getStat():
   '''获取LED状态'''
